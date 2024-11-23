@@ -1,0 +1,77 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+
+.mood {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(245, 19, 128, 0.147);
+  &__reflect {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  &__prompt {
+    text-align: center;
+  }
+  &__prompt-description {
+    padding: 0.3rem 1.5rem;
+    text-align: center;
+  }
+  &__options {
+    font-weight: 600;
+    font-style: italic;
+  }
+  &-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__input {
+      width: 80%;
+      border: 2px solid blue;
+      height: 3.5vh;
+      @include tablet {
+        width: 20%;
+        margin: 0 auto;
+        padding-left: 0.2rem;
+      }
+    }
+  }
+  &__button {
+    margin: 0.5rem auto;
+    background-color: blue;
+    color: white;
+    @include tablet {
+      width: 30%;
+    }
+  }
+  .journal {
+    display: flex;
+    flex-direction: column;
+    &__entry {
+      display:flex;
+      justify-content:center;
+      padding: 0 1.5rem;
+    }
+    &__input {
+      width: 90%;
+      border: 2px solid blue;
+      height: 15vh;
+      margin-left: 0.75rem;
+      padding-top: 0;
+      @include tablet {
+        width: 70%;
+        margin: 0 auto;
+        padding-left: 0.2rem;
+      }
+    }
+    &__button {
+      background-color: blue;
+      color: white;
+      width: 50%;
+      margin: 0.5rem auto;
+      @include tablet {
+        width: 30%;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+
+.about {
+  background-color: rgba(245, 19, 128, 0.147);
+  padding:0.5rem;
+  &__company{
+    font-weight:600;
+  }
+}

@@ -1,0 +1,77 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+
+.header {
+  @include flex-column;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  width: 100%;
+  padding-top: 1rem;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgb(240, 85, 155), rgb(255, 140, 80));
+  border-bottom: 2px solid rgb(26, 32, 226);
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 1rem 0;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    @include tablet {
+      padding-bottom: 0;
+      padding-left: 2.5rem;
+    }
+  }
+
+  &__logo-image {
+    width: 6.5rem;
+    height: auto;
+    max-width: 100%;
+
+    @include flex-center;
+    @include tablet {
+      width: 8rem;
+      padding-right: 9rem;
+    }
+    @include desktop {
+      padding: 0.5rem 32rem 0.5rem 3.9rem;
+      width: 6.9rem;
+    }
+  }
+  &__button-container {
+    display: flex;
+  }
+  &__link {
+    font-size: 1rem;
+    margin: 0 auto;
+    @include tablet {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    &:visited {
+      color: navy;
+    }
+  }
+}
+
+.journal {
+  display: flex;
+  &__link {
+    font-size: 1rem;
+    margin: 0 auto;
+    color: navy;
+    @include tablet {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+}
