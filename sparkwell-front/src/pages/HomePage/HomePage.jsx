@@ -18,8 +18,8 @@ const MoodSearch = ({ onMoodSelect }) => {
   return (
     <div className="mood-search">
       <label htmlFor="mood__dropdown" className="mood__prompt-description">
-        Choose your mood from the options below to discover a Spotify song that
-        matches it!
+        Choose your mood from the options below to discover a Spotify playlist
+        that matches it!
       </label>
       <select
         id="mood__dropdown"
@@ -50,9 +50,9 @@ function HomePage() {
 
     try {
       //Sending the mood to the back-end
-      const response = await axios.get(`${baseUrl}/mood-playlist`, {
-        params: { mood },
-      });
+      const response = await axios.get(`${baseUrl}/mood-playlist?mood=${mood}`);
+
+      console.log(response.data);
       setPlaylists(response.data.playlists);
     } catch (error) {
       console.error("Error getting the playlist:", error);
@@ -66,9 +66,9 @@ function HomePage() {
       <MoodSearch onMoodSelect={handleMoodSelect} />
 
       <div className="playlist">
-        <h3>Playlist for "{selectedMood}" mood:</h3>
+        <h3 className="playlist__mood">Playlist for {selectedMood} mood:</h3>
         <ul>
-          {playlists.map((playlist, index) => (
+          {playlists?.map((playlist, index) => (
             <li key={index}>
               <a href={playlist.url} target="_blank" rel="noopener noreferrer">
                 {playlist.name}
@@ -76,7 +76,7 @@ function HomePage() {
             </li>
           ))}
         </ul>
-        <button className="mood__button">Generate Mood-Based Song</button>
+
         <div className="journal">
           <p className="journal__entry">
             Journal about your day. Reflect on the best parts of your day and
@@ -89,7 +89,6 @@ function HomePage() {
           />
           <button className="journal__button">Reflect</button>
         </div>
-        ;
       </div>
     </div>
   );

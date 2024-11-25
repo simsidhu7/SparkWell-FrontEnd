@@ -44,8 +44,17 @@
       width: 6.9rem;
     }
   }
-  &__button-container {
+  &__button-container, &__home {
     display: flex;
+  }
+
+  &__home-link{
+    font-size: 1rem;
+    margin: 0 auto;
+    @include tablet {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
   }
   &__link {
     font-size: 1rem;

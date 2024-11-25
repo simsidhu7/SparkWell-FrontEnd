@@ -4,7 +4,7 @@
 .mood {
   display: flex;
   flex-direction: column;
-  background-color: rgba(245, 19, 128, 0.147);
+
   &__reflect {
     text-align: center;
     padding-bottom: 0;
@@ -36,32 +36,25 @@
       }
     }
   }
-  &__button {
-    margin: 0.5rem auto;
-    background-color: blue;
-    color: white;
-    @include tablet {
-      width: 30%;
-    }
-  }
+
   .journal {
     display: flex;
     flex-direction: column;
     &__entry {
-      display:flex;
-      justify-content:center;
-      padding: 0 1.5rem;
+      display: flex;
+      justify-content: center;
+      padding: 0 1rem;
     }
     &__input {
       width: 90%;
       border: 2px solid blue;
       height: 15vh;
-      margin-left: 0.75rem;
+      margin-left: 1rem;
       padding-top: 0;
       @include tablet {
         width: 70%;
         margin: 0 auto;
-        padding-left: 0.2rem;
+        padding-left: 0.4rem;
       }
     }
     &__button {
@@ -72,6 +65,19 @@
       @include tablet {
         width: 30%;
       }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.playlist{
+  &__mood{
+    padding-left:1rem;
+    @include tablet{
+      margin:0 auto;
     }
   }
 }
