@@ -50,7 +50,9 @@ function HomePage() {
 
     try {
       //Sending the mood to the back-end
-      const response = await axios.get(`${baseUrl}/mood-playlist`, { mood });
+      const response = await axios.get(`${baseUrl}/mood-playlist`, {
+        params: { mood },
+      });
       setPlaylists(response.data.playlists);
     } catch (error) {
       console.error("Error getting the playlist:", error);
