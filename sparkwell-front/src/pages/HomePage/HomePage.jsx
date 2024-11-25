@@ -75,22 +75,22 @@ function HomePage() {
           ))}
         </ul>
         <button className="mood__button">Generate Mood-Based Song</button>
+        <div className="journal">
+          <p className="journal__entry">
+            Journal about your day. Reflect on the best parts of your day and
+            release what doesn't serve you.
+          </p>
+          <input
+            className="journal__input"
+            name="journal__input"
+            placeholder="Let's reflect."
+          />
+          <button className="journal__button">Reflect</button>
+        </div>
+        ;
       </div>
     </div>
   );
 }
-
-<div className="journal">
-  <p className="journal__entry">
-    Journal about your day. Reflect on the best parts of your day and release
-    what doesn't serve you.
-  </p>
-  <input
-    className="journal__input"
-    name="journal__input"
-    placeholder="Let's reflect."
-  />
-  <button className="journal__button">Reflect</button>
-</div>;
 
 export default HomePage;
