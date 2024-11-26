@@ -21,6 +21,16 @@
         padding-left: 0.4rem;
       }
     }
+    &__form{
+        display:flex;
+        flex-direction:column;
+    }
+    &__label{
+        margin:0 auto;
+        font-weight:600;
+        font-style:italic;
+        color:blue;
+    }
     &__button {
       background-color: blue;
       color: white;

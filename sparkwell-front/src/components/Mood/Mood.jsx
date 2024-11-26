@@ -1,5 +1,4 @@
 import "./Mood.scss";
-import { Link } from "react-router-dom";
 import {useState} from "react";
 
 const Mood = ({ onMoodSelect }) => {
