@@ -1,0 +1,10 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+
+.waterintake-bottle{
+display:flex;
+&__image {
+  width: 150px;
+  height: 200px;
+}
+}

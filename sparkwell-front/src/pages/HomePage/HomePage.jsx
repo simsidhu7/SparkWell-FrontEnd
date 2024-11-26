@@ -1,7 +1,8 @@
 import "../../App.scss";
 import "./HomePage.scss";
-import Journal from '../../components/Journal/Journal';
-import Mood from '../../components/Mood/Mood';
+import Journal from "../../components/Journal/Journal";
+import Mood from "../../components/Mood/Mood";
+import WaterIntake from "../../components/WaterIntake/WaterIntake";
 import { useState } from "react";
 import axios from "axios";
 
@@ -47,7 +48,7 @@ function HomePage() {
         </ul>
 
         <Journal />
-
+        <WaterIntake />
       </div>
     </div>
   );
