@@ -1,12 +1,40 @@
 import "../../App.scss";
 import "../HomePage/Homepage.scss";
+import "./JournalEntries.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 
 function JournalEntries() {
-  //use effect with empty dependency array to call axios to fetch journal entries from teh backend
-  //set state for teh response for the backend journal entries
-  return <div className="journal-entries"></div>;
+  const [journalEntries, setJournalEntries] = useState([]);
+
+  useEffect(() => {
+    const fetchJournalEntries = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:8080/journalentries"
+        );
+        setJournalEntries(response.data);
+      } catch (err) {
+        console.error("Error fetching journal entries: ", err);
+      }
+    };
+    fetchJournalEntries();
+  }, []);
+
+  return (
+    <div className="journal-entries">
+      {journalEntries.length > 0 ? (
+        journalEntries.map((entry) => (
+          <div key={entry.id} className="journal-entry">
+            <p>Entry: {entry.entry}</p>
+            <span>Date: {entry.timestamp}</span>
+          </div>
+        ))
+      ) : (
+        <p className="journal-entries__nonefound">Journal entries not found.</p>
+      )}
+    </div>
+  );
 }
 export default JournalEntries;

@@ -1,0 +1,33 @@
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+
+.journal {
+    display: flex;
+    flex-direction: column;
+    &__entry {
+      display: flex;
+      justify-content: center;
+      padding: 0 1rem;
+    }
+    &__input {
+      width: 90%;
+      border: 2px solid blue;
+      height: 15vh;
+      margin-left: 1rem;
+      padding-top: 0;
+      @include tablet {
+        width: 70%;
+        margin: 0 auto;
+        padding-left: 0.4rem;
+      }
+    }
+    &__button {
+      background-color: blue;
+      color: white;
+      width: 50%;
+      margin: 0.5rem auto;
+      @include tablet {
+        width: 30%;
+      }
+    }
+  }

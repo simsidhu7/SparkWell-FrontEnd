@@ -28,7 +28,7 @@ function Header() {
       </div>
       <div className="journal">
         <Link to="/JournalEntries" className="journal__link">
-          <span className="journal__button">Journal Entries</span>
+          <span className="journal__button-header">Journal Entries</span>
         </Link>
       </div>
     </header>
