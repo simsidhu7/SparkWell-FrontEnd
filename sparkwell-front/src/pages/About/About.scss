@@ -2,8 +2,12 @@
 @use "../../styles/partials/variables.scss" as *;
 
 .about {
-  padding:0.5rem;
-  &__company{
-    font-weight:600;
+  padding: 0.5rem;
+  &__company {
+    font-weight: 600;
+  }
+  &__journaling-image {
+    width: 10rem;
+    height: auto;
   }
 }

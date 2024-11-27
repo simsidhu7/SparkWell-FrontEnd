@@ -18,25 +18,25 @@ function WaterIntake() {
       setBottleFilter(
         "brightness(0) saturate(100%) invert(10%) sepia(73%) saturate(7317%) hue-rotate(10deg) brightness(91%) contrast(117%)"
       );
-      setMessage("Let's get hydating!");
+      setMessage("Let's get hydating! 🚰");
       //orange
     } else if (amountOfWater < 4) {
       setBottleFilter(
         "brightness(0) saturate(100%) invert(73%) sepia(19%) saturate(3682%) hue-rotate(357deg) brightness(95%) contrast(99%)"
       );
-      setMessage("You're almost at 8 glasses. Keep going!");
+      setMessage("You're almost at 8 glasses. Keep going! 🙂");
       //light blue
     } else if (amountOfWater < 6) {
       setBottleFilter(
         "brightness(0) saturate(100%) invert(93%) sepia(67%) saturate(4633%) hue-rotate(175deg) brightness(105%) contrast(98%)"
       );
-      setMessage("Good progress!");
+      setMessage("Good progress! 😊");
       //blue
     } else if (amountOfWater < 8) {
       setBottleFilter(
         "brightness(0) saturate(100%) invert(48%) sepia(46%) saturate(671%) hue-rotate(163deg) brightness(94%) contrast(101%)"
       );
-      setMessage("You are almost at the goal of 8 glasses. Nice job!");
+      setMessage("You are almost at the goal of 8 glasses. Nice job! 🚀");
       //green
     } else if (amountOfWater >= 8) {
       setBottleFilter(
@@ -58,7 +58,7 @@ function WaterIntake() {
           min="0"
           placeholder="Daily Water Intake"
         />
-        <button type="submit">Submit</button>
+        <button className="waterintake-form__button" type="submit">Submit</button>
       </form>
       <p>{totalWater}/8 recommended glasses consumed.</p>
       <p>{message}</p>

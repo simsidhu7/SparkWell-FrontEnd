@@ -9,15 +9,15 @@ const Journal = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-if (!journalEntry.trim()){
-    Swal.fire({
-        title:"Error!",
-        text:"Please enter in a reflection before submitting.",
-        icon:"error",
-        confirmButtonText:"OK",
-    });
-    return;
-}
+    if (!journalEntry.trim()) {
+      Swal.fire({
+        title: "Error!",
+        text: "Please enter in a reflection before submitting.",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+      return;
+    }
 
     try {
       const response = await axios.post(
@@ -36,7 +36,7 @@ if (!journalEntry.trim()){
       Swal.fire({
         title: "Error!",
         text: "Failed to save your reflection. Please try again.",
-        icon: "error", 
+        icon: "error",
         confirmButtonText: "OK",
       });
     }
@@ -49,7 +49,9 @@ if (!journalEntry.trim()){
       </p>
 
       <form className="journal__form" onSubmit={handleSubmit}>
-        <label htmlFor="journal__input" className="journal__label">Journal Entry:</label>
+        <label htmlFor="journal__input" className="journal__label">
+          Journal Entry:
+        </label>
         <textarea
           id="journal__input"
           className="journal__input"
