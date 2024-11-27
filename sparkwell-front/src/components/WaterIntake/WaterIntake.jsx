@@ -60,7 +60,7 @@ function WaterIntake() {
         />
         <button type="submit">Submit</button>
       </form>
-      <p>{totalWater}/8 recommended glasses consumed</p>
+      <p>{totalWater}/8 recommended glasses consumed.</p>
       <p>{message}</p>
       <div className="waterintake-bottle">
         <img

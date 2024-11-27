@@ -38,13 +38,23 @@ function HomePage() {
       <div className="playlist">
         <h3 className="playlist__mood">Playlist for {selectedMood} mood:</h3>
         <ul>
-          {playlists?.map((playlist, index) => (
-            <li key={index}>
-              <a href={playlist.url} target="_blank" rel="noopener noreferrer">
-                {playlist.name}
-              </a>
-            </li>
-          ))}
+          {playlists?.map((playlist, index) => {
+            console.log(playlist);
+            if (!playlist){
+              return
+            }
+            return (
+              <li key={index}>
+                <a
+                  href={playlist.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {playlist.name}
+                </a>
+              </li>
+            );
+          })}
         </ul>
 
         <Journal />
