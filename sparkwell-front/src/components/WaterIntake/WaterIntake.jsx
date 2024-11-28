@@ -48,22 +48,27 @@ function WaterIntake() {
 
   return (
     <>
-    <h3 className="waterintake-header">Daily Water Intake</h3>
+      <h3 className="waterintake-header">Daily Water Intake</h3>
       <form className="waterintake-form" onSubmit={updateWaterIntake}>
         <label htmlFor="waterintake" className="waterintake__label">
           Please enter the total amount of water that you drank today:
         </label>
         <input
           type="number"
+          name="waterintake"
           className="waterintake"
           min="0"
           placeholder="Daily Water Intake"
         />
-        <button className="waterintake-form__button" type="submit">Submit</button>
+        <button className="waterintake-form__button" type="submit">
+          Submit
+        </button>
       </form>
       <article className="waterintake-results">
-      <p className="waterintake-results__glasses">{totalWater}/8 recommended glasses consumed.</p>
-      <p className="waterintake-results__message">{message}</p>
+        <p className="waterintake-results__glasses">
+          {totalWater}/8 recommended glasses consumed.
+        </p>
+        <p className="waterintake-results__message">{message}</p>
       </article>
       <div className="waterintake-bottle">
         <img
