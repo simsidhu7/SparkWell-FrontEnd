@@ -9,7 +9,7 @@ function WaterIntake() {
 
   const updateWaterIntake = (event) => {
     event.preventDefault();
-    const amountOfWater = Number(event.target.waterAmount.value);
+    const amountOfWater = Number(event.target.waterintake.value);
 
     setTotalWater(amountOfWater);
 
