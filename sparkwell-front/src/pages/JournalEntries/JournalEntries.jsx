@@ -1,5 +1,4 @@
 import "../../App.scss";
-import "../HomePage/Homepage.scss";
 import "./JournalEntries.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
