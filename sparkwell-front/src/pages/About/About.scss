@@ -2,6 +2,17 @@
 @use "../../styles/partials/variables.scss" as *;
 
 .about {
+  &__creator,
+  &__app {
+    background: rgba(255, 255, 255, 0.445);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  @include tablet {
+    padding: 1.5rem;
+  }
   padding: 0.5rem;
   &__company {
     font-weight: 600;
@@ -9,5 +20,10 @@
   &__journaling-image {
     width: 10rem;
     height: auto;
+    margin-bottom: 0.4rem;
+    border-radius: 12px;
+    @include tablet {
+      width: 11rem;
+    }
   }
 }

@@ -48,6 +48,7 @@ function WaterIntake() {
 
   return (
     <>
+    <h3 className="waterintake-header">Daily Water Intake</h3>
       <form className="waterintake-form" onSubmit={updateWaterIntake}>
         <label htmlFor="waterintake" className="waterintake__label">
           Please enter the total amount of water that you drank today:
