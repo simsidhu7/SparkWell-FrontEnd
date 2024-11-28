@@ -21,7 +21,7 @@ const Journal = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/journalentries",
+        `${import.meta.env.VITE_BASE_URL}/journalentries`,
         { entry: journalEntry }
       );
       Swal.fire({

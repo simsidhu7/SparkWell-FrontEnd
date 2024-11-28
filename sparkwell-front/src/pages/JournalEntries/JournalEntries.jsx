@@ -11,7 +11,7 @@ function JournalEntries() {
     const fetchJournalEntries = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/journalentries"
+          `${import.meta.env.VITE_BASE_URL}/journalentries`
         );
         setJournalEntries(response.data);
       } catch (err) {

@@ -5,7 +5,6 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import journalImage from "../../assets/images/Journaling.jpeg";
 
-const baseUrl = import.meta.env.VITE_BASE_URL;
 
 function About() {
   return (
