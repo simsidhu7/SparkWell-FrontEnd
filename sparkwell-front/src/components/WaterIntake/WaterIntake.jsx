@@ -54,14 +54,16 @@ function WaterIntake() {
         </label>
         <input
           type="number"
-          name="waterAmount"
+          className="waterintake"
           min="0"
           placeholder="Daily Water Intake"
         />
         <button className="waterintake-form__button" type="submit">Submit</button>
       </form>
-      <p>{totalWater}/8 recommended glasses consumed.</p>
-      <p>{message}</p>
+      <article className="waterintake-results">
+      <p className="waterintake-results__glasses">{totalWater}/8 recommended glasses consumed.</p>
+      <p className="waterintake-results__message">{message}</p>
+      </article>
       <div className="waterintake-bottle">
         <img
           className="waterintake-bottle__image"

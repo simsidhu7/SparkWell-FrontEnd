@@ -1,25 +1,41 @@
 @use "../../styles/partials/mixins.scss" as *;
 @use "../../styles/partials/variables.scss" as *;
 
-.waterintake-form{
-    &__button{
-        background-color: rgb(240, 85, 155);
-      font-family: monospace;
-      color: white;
-      width: 20%;
-      margin: 0.5rem auto;
-      padding: 0.4rem;
-      border-radius: 0.9rem;
-      border: 1px solid black;
-      @include tablet {
-        width: 10%;
-      }
+.waterintake-form {
+  padding: 1rem;
+  @include flex-column;
+  &__button {
+    background-color: rgb(240, 85, 155);
+    font-family: monospace;
+    color: white;
+    width: 20%;
+    margin: 0.5rem auto;
+    padding: 0.4rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.9rem;
+    border: 1px solid black;
+    @include tablet {
+      width: 10%;
     }
+  }
 }
-.waterintake-bottle{
-display:flex;
-&__image {
-  width: 210px;
-  height: 250px;
+
+.waterintake-results {
+  @include flex-column;
+  align-items:center;
+  &__glasses,
+  &__message {
+    margin: 0;
+  }
 }
+
+.waterintake-bottle {
+    @include flex-column;
+    align-items:center;
+  &__image {
+    justify-content: center;
+    width: 210px;
+    height: 250px;
+  }
 }
