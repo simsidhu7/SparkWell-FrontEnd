@@ -49,8 +49,13 @@
     padding: 0.4rem 0;
     border-radius: 0.9rem;
     &:hover {
-      background-color: black;
+      background-color: #0056b3;
       transform: scale(1.05);
+    }
+
+    &:active {
+      background-color: #031e39;
+      transform: scale(0.95);
     }
     @include tablet {
       width: 30%;

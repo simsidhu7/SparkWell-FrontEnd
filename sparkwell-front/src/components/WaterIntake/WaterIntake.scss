@@ -16,8 +16,13 @@
     border-radius: 0.9rem;
     border: 1px solid black;
     &:hover {
-      background-color: black;
+      background-color: rgb(155, 54, 100);
       transform: scale(1.05);
+    }
+
+    &:active {
+      background-color: rgb(48, 17, 31);
+      transform: scale(0.95);
     }
     @include tablet {
       width: 10%;
