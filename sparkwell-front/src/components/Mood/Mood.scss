@@ -2,18 +2,17 @@
 @use "../../styles/partials/variables.scss" as *;
 
 .mood {
-
   &-search__descr {
     padding: 0.1rem 0rem;
     font-weight: 600;
-    color:blue;
+    color: blue;
   }
 
   &-search {
     display: flex;
     flex-direction: column;
-    margin-left:1rem;
-    margin-bottom:1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
     &__dropdown {
       width: 70%;
       @include tablet {
@@ -22,4 +21,3 @@
     }
   }
 }
-

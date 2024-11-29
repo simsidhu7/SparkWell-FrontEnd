@@ -55,6 +55,7 @@ function WaterIntake() {
         </label>
         <input
           type="number"
+          id="waterintake"
           name="waterintake"
           className="waterintake"
           min="0"

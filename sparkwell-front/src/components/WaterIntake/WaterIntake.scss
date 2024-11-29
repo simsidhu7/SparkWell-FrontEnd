@@ -50,14 +50,14 @@
   font-family: monospace;
   padding: 0rem 0 0 0.4rem;
   margin: 0 auto;
-  border-radius:6px;
+  border-radius: 6px;
   @include tablet {
     width: 25%;
     margin: 0 auto;
     padding-left: 0.4rem;
   }
-  @include desktop{
-    width:15%;
+  @include desktop {
+    width: 15%;
   }
   &-header {
     padding-left: 1rem;

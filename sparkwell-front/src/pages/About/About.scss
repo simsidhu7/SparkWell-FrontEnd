@@ -2,6 +2,9 @@
 @use "../../styles/partials/variables.scss" as *;
 
 .about {
+  &__title {
+    color: blue;
+  }
   &__creator,
   &__app {
     background: rgba(255, 255, 255, 0.445);

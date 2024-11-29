@@ -8,8 +8,8 @@
     display: flex;
     justify-content: center;
     padding: 0 1rem;
-    @include tablet{
-        padding:0 3.2rem;
+    @include tablet {
+      padding: 0 3.2rem;
     }
   }
   &__input {
@@ -19,14 +19,15 @@
     margin-left: 1rem;
     font-family: monospace;
     padding: 1rem 0 0 1rem;
-    border-radius:6px;
+    border-radius: 6px;
     @include tablet {
       width: 85%;
+      height: 20vh;
       margin: 0 auto;
       padding-left: 0.4rem;
     }
-    @include desktop{
-        width:68%;
+    @include desktop {
+      width: 68%;
     }
   }
   &__form {

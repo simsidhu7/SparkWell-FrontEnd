@@ -5,7 +5,7 @@
   @include flex-column;
   justify-content: flex-start;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight:600;
+  font-weight: 600;
   font-size: 0.875rem;
   width: 100%;
   padding-top: 1rem;
@@ -52,13 +52,13 @@
 
   &__home-icon {
     width: 1.25rem;
-    padding:0.1rem 0.2rem 0 0;
+    padding: 0.1rem 0.2rem 0 0;
     height: auto;
   }
 
   &__about-icon {
     width: 1.1rem;
-    padding:0.1rem 0.2rem 0 0;
+    padding: 0.1rem 0.2rem 0 0;
     height: auto;
   }
   &__home-link {
@@ -96,9 +96,9 @@
       font-size: 1.2rem;
     }
   }
-  &__book-icon{
+  &__book-icon {
     width: 1.25rem;
-    padding:0.1rem 0.2rem 0 0;
+    padding: 0.1rem 0.2rem 0 0;
     height: auto;
   }
 }
