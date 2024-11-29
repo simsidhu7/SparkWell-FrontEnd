@@ -4,6 +4,12 @@
 .journal {
   display: flex;
   flex-direction: column;
+  &__divider {
+    height: 2px;
+    background: linear-gradient(to right, #ff758c, #fad0c4);
+    margin: 2rem 0;
+    border-radius: 5px;
+  }
   &__entry {
     display: flex;
     justify-content: center;

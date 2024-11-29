@@ -38,6 +38,7 @@ a {
 .playlist {
   &__mood {
     padding-left: 1rem;
+    padding-top: 2rem;
     @include tablet {
       margin: 0 auto;
     }

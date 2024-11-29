@@ -2,7 +2,7 @@
 @use "../../styles/partials/variables.scss" as *;
 
 .waterintake-form {
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   @include flex-column;
   &__button {
     background-color: rgb(240, 85, 155);
@@ -69,9 +69,12 @@
     width: 15%;
   }
   &-header {
+    margin: 0;
+    padding-top: 2rem;
     padding-left: 1rem;
   }
   &__label {
     margin-bottom: 0.5rem;
   }
 }
+
