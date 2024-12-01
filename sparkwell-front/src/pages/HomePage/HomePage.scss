@@ -22,8 +22,11 @@
     font-size: 1.2rem;
     animation: bounce 1s ease-in-out 2;
     font-weight: 600;
+    @include tablet {
+      font-size: 1.4rem;
+    }
     @include desktop {
-      font-size: 1.375rem;
+      font-size: 1.5rem;
     }
   }
   &__prompt {

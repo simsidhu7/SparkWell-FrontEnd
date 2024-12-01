@@ -1,8 +1,5 @@
 import "../../App.scss";
 import "../About/About.scss";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { useParams, useNavigate } from "react-router-dom";
 import journalImage from "../../assets/images/Journaling.jpeg";
 
 function About() {
@@ -12,7 +9,8 @@ function About() {
         <h2 className="about__title">About SparkWell</h2>
         <p className="about__benefits">
           Spark your wellness and self-care journey! Reflecting on your mood and
-          processing emotions is a core aspect of <span className="about__company">SparkWell</span>, as it offers
+          processing emotions is a core aspect of{" "}
+          <span className="about__company">SparkWell</span>, as it offers
           numerous benefits, including increased self-awareness, emotional
           regulation, improving mental health, enhanced communication, personal
           growth, and productivity. By fostering mindfulness and helping users
@@ -43,9 +41,9 @@ function About() {
           it’s intricate navigation menus, overcrowded dashboards, or
           overwhelming customization options, these apps often fail to provide
           the straightforward tools people need to incorporate into their daily
-          lives. For neurodivergent individuals - such as those with ADHD, autism,
-          or anxiety - this complexity can feel especially frustrating, leading
-          many to abandon the apps entirely.{" "}
+          lives. For neurodivergent individuals - such as those with ADHD,
+          autism, or anxiety - this complexity can feel especially frustrating,
+          leading many to abandon the apps entirely.{" "}
           <span className="about__company">SparkWell</span> bridges this gap by
           offering a streamlined, intuitive experience that works for everyone.
         </p>{" "}
@@ -62,7 +60,7 @@ function About() {
           them to express their thoughts and feelings, while also offering the
           ability to revisit these entries later, complete with timestamps, to
           reflect on their journey and release emotions that no longer serve
-          them. 
+          them.
           <span className="about__company"> SparkWell</span> also promotes
           physical well-being by encouraging users to track their daily water
           intake. Staying hydrated is a small yet powerful habit that can

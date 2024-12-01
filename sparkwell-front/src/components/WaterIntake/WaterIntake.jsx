@@ -24,7 +24,7 @@ function WaterIntake() {
       setBottleFilter(
         "brightness(0) saturate(100%) invert(73%) sepia(19%) saturate(3682%) hue-rotate(357deg) brightness(95%) contrast(99%)"
       );
-      setMessage("You're almost at 8 glasses. Keep going! 🙂");
+      setMessage("You're almost halfway there. Keep going! 🙂");
       //light blue
     } else if (amountOfWater < 6) {
       setBottleFilter(
@@ -65,6 +65,7 @@ function WaterIntake() {
           Submit
         </button>
       </form>
+
       <article className="waterintake-results">
         <p className="waterintake-results__glasses">
           {totalWater}/8 recommended glasses consumed.

@@ -8,7 +8,7 @@ const Mood = ({ onMoodSelect }) => {
   const handleMoodChange = (event) => {
     const mood = event.target.value;
     setSelectedMood(mood);
-    onMoodSelect(mood); // Pass selected mood to parent
+    onMoodSelect(mood); 
   };
 
   return (

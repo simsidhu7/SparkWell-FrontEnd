@@ -2,7 +2,6 @@ import "../../App.scss";
 import "./JournalEntries.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { useParams, useNavigate } from "react-router-dom";
 
 function JournalEntries() {
   const [journalEntries, setJournalEntries] = useState([]);

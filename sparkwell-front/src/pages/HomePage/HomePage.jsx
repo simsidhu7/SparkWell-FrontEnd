@@ -17,7 +17,6 @@ function HomePage() {
     console.log(`Selected mood: ${mood}`);
 
     try {
-      //Sending the mood to the back-end
       const response = await axios.get(`${baseUrl}/mood-playlist?mood=${mood}`);
 
       console.log(response.data);
@@ -28,7 +27,6 @@ function HomePage() {
   };
 
   return (
-    // put mood and journal into components
     <div className="mood">
       <p className="mood__reflect">Let's reflect on your mood.</p>
       <p className="mood__prompt">How are you feeling right now?</p>
@@ -40,8 +38,8 @@ function HomePage() {
         <ul>
           {playlists?.map((playlist, index) => {
             console.log(playlist);
-            if (!playlist){
-              return
+            if (!playlist) {
+              return;
             }
             return (
               <li key={index}>

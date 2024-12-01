@@ -30,7 +30,6 @@ const Journal = () => {
         icon: "success",
         confirmButtonText: "OK",
       });
-      //Clear after submission
       setJournalEntry("");
     } catch (error) {
       Swal.fire({
@@ -43,7 +42,7 @@ const Journal = () => {
   };
   return (
     <div className="journal">
-        <span className="journal__divider"></span>
+      <span className="journal__divider"></span>
       <p className="journal__entry">
         Journal about your day. Reflect on the best parts of your day and
         release what doesn't serve you.

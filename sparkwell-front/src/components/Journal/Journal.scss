@@ -5,32 +5,33 @@
   display: flex;
   flex-direction: column;
   &__divider {
-    height: 2px;
+    height: 0.125rem;
     background: linear-gradient(to right, #ff758c, #fad0c4);
-    margin: 2rem 0;
-    border-radius: 5px;
+    margin: 32px 0;
+    border-radius: 0.3125rem;
   }
   &__entry {
     display: flex;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0 16px;
     @include tablet {
-      padding: 0 3.2rem;
+      padding: 0 51.2px;
     }
   }
   &__input {
     width: 90%;
-    border: 2px solid blue;
+    border: 0.125rem solid blue;
     height: 15vh;
-    margin-left: 1rem;
+    margin-left: 16px;
     font-family: monospace;
-    padding: 1rem 0 0 1rem;
-    border-radius: 6px;
+    padding: 16px 0 0 16px;
+    border-radius: 0.375rem;
     @include tablet {
       width: 85%;
       height: 20vh;
       margin: 0 auto;
-      padding-left: 0.4rem;
+      padding-left: 6.4px;
+      font-size: 0.94rem;
     }
     @include desktop {
       width: 68%;
@@ -51,9 +52,9 @@
     font-family: monospace;
     color: white;
     width: 50%;
-    margin: 0.5rem auto;
-    padding: 0.4rem 0;
-    border-radius: 0.9rem;
+    margin: 8px auto;
+    padding: 6.4px 0;
+    border-radius: 14.4px;
     &:hover {
       background-color: #0056b3;
       transform: scale(1.05);
