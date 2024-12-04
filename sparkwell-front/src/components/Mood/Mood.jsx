@@ -1,6 +1,7 @@
 import "./Mood.scss";
 import { useState } from "react";
 import { Select, MenuItem, FormControl, InputLabel } from "@mui/material";
+import spotifyLogo from "../../assets/images/SpotifyLogo.svg";
 
 const Mood = ({ onMoodSelect }) => {
   const [selectedMood, setSelectedMood] = useState("");
@@ -8,7 +9,7 @@ const Mood = ({ onMoodSelect }) => {
   const handleMoodChange = (event) => {
     const mood = event.target.value;
     setSelectedMood(mood);
-    onMoodSelect(mood); 
+    onMoodSelect(mood);
   };
 
   return (
@@ -17,12 +18,18 @@ const Mood = ({ onMoodSelect }) => {
         Select your mood from the options below to discover a Spotify playlist
         that matches it!
       </p>
+   <img
+            className="mood-search__logo"
+            src={spotifyLogo}
+            alt="Spotify Logo"
+          />
       <FormControl fullWidth>
         <InputLabel
           id="mood-search__dropdown"
           className="mood-search__prompt-description"
         >
           Select Your Mood
+    
         </InputLabel>
         <Select
           labelId="mood-search__dropdown"
