@@ -25,8 +25,12 @@ function JournalEntries() {
       {journalEntries.length > 0 ? (
         journalEntries.map((entry) => (
           <div key={entry.id} className="journal-entry">
-            <p className="journal-entry__content">Entry: {entry.entry}</p>
-            <span className="journal-entry__date">Date: {entry.timestamp}</span>
+            <p className="journal-entry__content">
+              Entry: {entry.JournalEntry}
+            </p>
+            <span className="journal-entry__date">
+              Date: {entry.TimeStamp.split("T")[0]}
+            </span>
             <div className="journal-entry__divider"></div>
           </div>
         ))
